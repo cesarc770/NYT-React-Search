@@ -1,0 +1,27 @@
+{
+  "name": "nyt-react-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarc770/NYT-React-Search.git"
+  },
+  "author": "Cesar Caceres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesarc770/NYT-React-Search/issues"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.0-rc0",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "homepage": "https://github.com/cesarc770/NYT-React-Search#readme"
+}
