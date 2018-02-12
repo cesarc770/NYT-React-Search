@@ -20,8 +20,8 @@ class Header extends Component {
 
 		return (
 			<nav>
-			    <div className="nav-wrapper">
-			      <Link to={this.props.auth ? '/surveys' : '/'} className="brand-logo">Pokemon</Link>
+			    <div className="nav-wrapper teal">
+			      <Link to={this.props.auth ? '/surveys' : '/'} className="brand-logo">NYT REACT SEARCH</Link>
 			      <ul className="right">
 			        {this.renderContent()}
 			      </ul>
