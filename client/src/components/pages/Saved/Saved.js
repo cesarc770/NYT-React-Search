@@ -28,7 +28,7 @@ class Saved extends Component {
 
 	render() {
 		return (
-			<div className="container">
+			<div className="container" style={{minHeight: 400}}>
 				<SavedContainer
 					results = {this.state.results}
 					deleteArticle = {this.deleteArticle}

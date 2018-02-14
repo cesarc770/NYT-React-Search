@@ -3,7 +3,7 @@ import './SavedContainer.css';
 
 
 const SavedContainer = (props) => 
-  	<div className="card bg-info" style={{marginTop: 30}}>
+  	<div className="card bg-info" style={{marginTop: 30, marginBottom: 30}}>
 	  <div className="card-header text-center">
 	  <h1>SAVED ARTICLES</h1>
 	  </div>
@@ -18,16 +18,14 @@ const SavedContainer = (props) =>
 						<a href={result.url} target="_blank">{result.title}</a>
 					</div>
 					<div className="col-sm-3">
-						Date Saved: {result.date}
+						Date Saved: {result.date.slice(0, 15)}
 					</div>
 					<div className="col-sm-1">
 						<button onClick={()=> props.deleteArticle(result._id)} className="btn btn-danger">X</button>
 					</div>
 					</div>
 				</div>
-				<div className="card-body">
-					
-				</div>
+				
 			</div>
 		
 			)}

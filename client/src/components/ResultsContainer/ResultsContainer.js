@@ -2,7 +2,7 @@ import React from "react";
 
 
 const ResultsContainer = (props) => 
-  	<div className="card bg-info" style={{marginTop: 30}}>
+  	<div className="card bg-info" style={{marginTop: 15, marginBottom: 15}}>
 	  <div className="card-header text-center">
 	  <h1>RESULTS</h1>
 	  </div>

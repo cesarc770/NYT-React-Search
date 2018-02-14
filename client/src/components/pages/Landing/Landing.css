@@ -1,0 +1,11 @@
+#container{
+	background: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Nytimes_hq.jpg') center center;
+	size: cover;
+	min-height: 600px;
+}
+
+#landingTitle{
+	color: white;
+	font-size: 100px;
+	font-family: 'Cheltenham', 'cursive';
+}
