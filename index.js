@@ -1,28 +1,22 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const cookieSession = require('cookie-session');
-const passport = require('passport');
 const bodyParser = require('body-parser');
 const keys = require('./config/keys');
-require('./models/User');
-require('./services/passport');
+const routes = require("./routes");
+const request = require("request");
+
 
 mongoose.connect(keys.mongoURI);
 
 
 const app = express();
 
+// Configure body parser for AJAX requests
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(
-	cookieSession({
-		maxAge: 30 * 24 * 60 * 60 * 1000,
-		keys: [keys.cookieKey]
-	})
-);
-app.use(passport.initialize());
-app.use(passport.session());
 
-require('./routes/authRoutes')(app);
+
+app.use(routes);
 
 if (process.env.NODE_ENV === 'production'){
 	// Express will serve up production assets
