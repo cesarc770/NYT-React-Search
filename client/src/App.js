@@ -10,10 +10,10 @@ const App = () =>
   <Router>
   	<div>
   		<Nav/>
-  		<Route exact path="/" component={Landing}/>
-  		<Route exact path="/search" component={Home}/>
-  		<Route exact path="/saved" component={Saved}/>
-  		<Footer/>
+  		// <Route exact path="/" component={Landing}/>
+  		// <Route exact path="/search" component={Home}/>
+  		// <Route exact path="/saved" component={Saved}/>
+  		// <Footer/>
   	</div>
   </Router>;
 

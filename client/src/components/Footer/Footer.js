@@ -6,11 +6,12 @@ const Footer = () =>
      <span>
       <img src="http://www.pvhc.net/img36/gjossjoescvolchpyjrk.png" alt="New York Times" className="img-responsive" style={{width: 50}}/>
     </span>
-    <br/>& <br/>
+    <br/> & <br/>
     <span>
       <img src="https://raw.githubusercontent.com/rexxars/react-hexagon/HEAD/logo/react-hexagon.png" alt="New York Times" className="img-responsive" style={{width: 50}}/>
     </span>
-    </a><a href="http://www.cesaracaceres.com/"><p>&copy; www.cesaracaceres.com 2018</p></a>
-    </footer>;
+    </a>
+    <a href="http://www.cesaracaceres.com"><p>&copy; www.cesaracaceres.com 2018</p></a>
+  </footer>;
 
 export default Footer;
