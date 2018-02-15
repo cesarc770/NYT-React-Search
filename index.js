@@ -5,7 +5,8 @@ const keys = require('./config/keys');
 const routes = require("./routes");
 require('./models');
 
-
+// Set up promises with mongoose
+mongoose.Promise = global.Promise;
 
 mongoose.connect(keys.mongoURI);
 
