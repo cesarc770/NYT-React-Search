@@ -1,7 +1,7 @@
 #container{
-	/*background: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Nytimes_hq.jpg') center center;
+	background: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Nytimes_hq.jpg') center center;
 	size: cover;
-*/	min-height: 600px;
+	min-height: 600px;
 }
 
 #landingTitle{
