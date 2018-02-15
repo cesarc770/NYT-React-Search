@@ -1,31 +1,27 @@
 {
-  "name": "nyt-react-search",
+  "name": "mern",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "installDeps": "yarn && cd client && yarn"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cesarc770/NYT-React-Search.git"
-  },
-  "author": "Cesar Caceres",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cesarc770/NYT-React-Search/issues"
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "concurrently": "^3.5.1",
-    "cookie-session": "^2.0.0-beta.3",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.0-rc0",
-    "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
-  },
-  "homepage": "https://github.com/cesarc770/NYT-React-Search#readme"
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.7"
+  }
 }
