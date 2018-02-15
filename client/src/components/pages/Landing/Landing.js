@@ -1,5 +1,6 @@
 import React from "react";
 import "./Landing.css";
+
 const Landing = () =>
 	<div className="text-center" id="container">
 		<div style={{paddingTop: 100}}>
